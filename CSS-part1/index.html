@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Shower Presentation Engine</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>HTML &amp; CSS</h1>
+		<p>Часть первая из трёх</p>
+	</header>
+	<section class="slide cover" id="Cover"><div>
+		<h2>HTML &amp; CSS</h2>
+		<p>Докладчик <a href="skype:para_likyrg">Ярошевич Дмитрий</a></p>
+		<img src="pictures/web-dev.jpg" alt="">
+		<!--
+			To apply styles to the certain slides
+			set slide ID to get needed elements
+			-->
+		<style>
+			#Cover h2 {
+				margin:30px 0 0;
+				background: #f16828;
+				color: #fff;
+				text-align:center;
+				font-size:70px;
+				}
+			#Cover p {
+				margin:10px 0 0;
+				text-align:center;
+				background: #f16828;
+				color: #fff;
+				font-style:italic;
+				font-size:24px;
+				}
+				#Cover p a {
+					color: #fff;
+					}
+		</style>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Часть первая:</h2>
+		<ol>
+			<li>Структура HTML приложения</li>
+			<li>CSS - это классы стилей</li>
+			<li>Веса селекторов</li>
+			<li>Псевдоклассы и псевдоэлементы</li>
+			<li>Position / Float / Display</li>
+		</ol>
+		<p class="note">И прочие простые, но не всегда понятные плюшки</p>
+	</div></section>
+	<section class="slide cover" id="PictureHtml"><div>
+		<img src="pictures/html-css-js-ext.png" alt="">
+		<style>
+			#PictureHtml { background: #fff; }
+			#PictureHtml img { width: 100%; }
+		</style>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Cascading Style Sheets</h2>
+		<p>
+			Применение CSS к документам HTML основано на принципах: 
+			<strong>наследования</strong> - относится к сходным свойствам (шрифт, цвет, зум)
+			<br/>
+			<strong>каскадирования</strong> - обрабатывает одновременное сопоставление более одного правила
+		</p>
+		<p>
+			<em>Правила:</em>
+			<br/>
+			<code>p#paragraph1 a:hover > * { property: value; }</code>
+			<br/>
+			<code>.login label ~ [type="text"] { property: value; } </code>
+		</p>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Класс - группа с общими признаками</h2>
+		<ol>
+			<li>произвольная совокупность множеств <em>(математика)</em></li>
+			<li>абстрактный тип данных <em>(програмирование)</em></li>
+			<li>один из рангов систематики <em>(биология)</em></li>
+			<li>социальные общности <em>(общество)</em></li>
+			<li>лексико-грамматическая категория <em>(лингвистика)</em></li>
+			<li>одноуровненая учебная группа <em>(педагогика)</em></li>
+			<li><strong>определённая совокупность стилей</strong><em>(CSS)</em></li>
+		</ol>
+	</div></section>
+	<section class="slide cover" id="PictureTitanic"><div>
+		<img src="pictures/titanic.jpg" alt="">
+		<style>
+			#PictureTitanic { background: #fff; }
+			#PictureTitanic img { width: 100%; }
+		</style>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Веса селекторов</h2>
+		<ol>
+			<li><strong>Теги</strong> <code>p 0000 0001</code> <code>body div a 0000 0003</code></li>
+			<li><strong>Классы</strong> <code>.main > .menu 0000 0020</code> <code>a:active 0000 0011</code></li>
+			<li><strong>ID</strong> <code>#head #logo a 0000 0201</code> <code>a:active 0000 0011</code></li>
+			<li><strong>Inline style</strong> <code>style="" 0000 1000</code></li>
+			<br/>
+			<li><strong>important!</strong> переносит вес на первые четыре уровня <code>0100 0000</code></li>
+			<li>Селектор <strong>атрибутов</strong> "весит" как класс <code>p 0000 0001</code></li> 
+			<li>Селектор <strong>*</strong> абсолютно невесомый</li>
+		</ol>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Псевдоклассы</h2>
+		<table>
+		<tr>
+			<th width="22%">Курсор</th>
+			<th width="28%">Состояние</th>
+			<th>Вложенность</th>
+			<th>Прочие</th>
+		</tr>
+		<tr>
+			<td>: hover</td>
+			<td>: enabled</td>
+			<td>: first-child</td>
+			<td>: not()</td>
+		</tr>
+		<tr>
+			<td>: active</td>
+			<td>: disabled</td>
+			<td>: last-child</td>
+			<td>: required</td>
+		</tr>
+		<tr>
+			<td>: visited</td>
+			<td>: checked</td>
+			<td>: only-child</td>
+			<td>: valid</td>
+		</tr>
+		<tr>
+			<td>: focus</td>
+			<td>: indeterminate</td>
+			<td>: nth-child(i)</td>
+			<td>: empty</td>
+		</tr>
+		</table>
+		<p>... и многие другие, полезные и бесполезные</p>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Псевдоэлементы</h2>
+		<table>
+			<tr>
+				<th wudth="17%">: before</td>
+				<th width="17%">: after</td>
+				<th width="24%">: first-letter</td>
+				<th width="23%">: first-line</td>
+				<th width="17%">: selection</td>
+			</tr>
+		</table>
+		<pre>
+			<code>&lt;p&gt;</code>
+			<code>  &lt;span&gt; <mark class="important">:before</mark> &lt;/span&gt;</code>
+    		<code>  <mark class="comment">&lt;!--Основной контент--&gt;</mark></code>
+			<code>  &lt;span&gt; <mark class="important">:after</mark> &lt;/span&gt;</code>
+			<code>&lt;/p&gt;</code>
+		</pre>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Position / Float / Display</h2>
+		<ul>
+			<li>Если display равно none, то float и position должны быть проигнорированы. При этом элемент не сгенерирует контейнера</li>
+			<li>Если position равно absolute/fixed, то display: block, а float: none. Расположение по свойствами top/right/bottom/left</li>
+			<li>Если float не равен none, то display: block и элемент "всплывает"</li>
+			<li>Иначе применяется свойство display, в том виде, в котором оно было определено</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2>В следующих частях:</h2>
+		<ol>
+			<li>Понимание тегов и семантическая вёртска</li>
+			<li class="next">Структура и оформление css</li>
+			<li class="next">Кроссбраузерность и reset.css</li>
+			<li class="next">CSS фреймворки и CSS grid</li>
+			<li class="next">Юзабилити и производительность</li>
+			<li class="next">Препроцессоры и будущее</li>
+		</ol>
+	</div></section>
+	<p class="badge"><a href="https://github.com/likyrg/CSS-seminar">Исходники на Github</a></p>
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"><div></div></div>
+	<script src="shower/shower.min.js"></script>
+	<!-- Copyright © 2013 Yours Truly, Famous Inc. -->
+	<!-- Photos by John Carey, fiftyfootshadows.net -->
+</body>
+</html>
