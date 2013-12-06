@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Shower Presentation Engine</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>HTML &amp; CSS</h1>
+		<p>Часть третья из трёх</p>
+	</header>
+	<section class="slide cover" id="Cover"><div>
+		<h2>HTML &amp; CSS</h2>
+		<p>Докладчик <a href="skype:para_likyrg">Ярошевич Дмитрий</a></p>
+		<img src="pictures/web-dev.jpg" alt="">
+		<!--
+			To apply styles to the certain slides
+			set slide ID to get needed elements
+			-->
+		<style>
+			#Cover h2 {
+				margin:30px 0 0;
+				background: #f16828;
+				color: #fff;
+				text-align:center;
+				font-size:70px;
+				}
+			#Cover p {
+				margin:10px 0 0;
+				text-align:center;
+				background: #f16828;
+				color: #fff;
+				font-style:italic;
+				font-size:24px;
+				}
+				#Cover p a {
+					color: #fff;
+					}
+		</style>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Часть третья:</h2>
+		<ol>
+			<li>reset.css и normalize.css</li>
+			<li>Использование CSS Grid</li>
+			<li>CSS фреймворки на примере bootstrap</li>
+			<li>CSS extension на примере SASS</li>
+			<li>Вопросы юзабилити</li>
+		</ol>
+		<p class="note">И прочие простые, но не всегда понятные плюшки</p>
+	</div></section>
+	<section class="slide cover" id="PictureReset"><div>
+		<img src="pictures/reset.png" alt="">
+		<style>
+			#PictureReset { background: #fff; }
+			#PictureReset img { width: 100%; }
+		</style>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Reset.css</h2>
+		<p>
+			<strong>reset.css</strong> - обнуление стилей (шрифт, отступы, размеры)
+			<br/>
+			<strong>normalize.css</strong> - применение одинаковых базовых стилей
+		</p>
+		<pre>
+			<code>p {</code>
+			<code>  display: block;</code>
+			<code>  -webkit-margin-before: 1em;</code>
+			<code>  -webkit-margin-after: 1em;</code>
+			<code>}</code>
+		</pre>
+	</div></section>
+	<section class="slide"><div>
+		<h2>CSS Grids</h2>
+		<ol>
+			<li>пример элемента <code>&lt;div class="grid_1 prefix_6 suffix_5"&gt;</code></li>
+			<li>элемент <code>.grid_12 .grid_2 {  width: 140px; } </code></li>
+			<li>префикс <code>.grid_12 .prefix_2 { padding-left: 160px;; } </code></li>
+			<li>постфикс <code>.grid_12 .suffix_2 {  padding-right: 160px; } </code></li>
+			<p class="note">Примеры: 960gs, blueprint, bootstrap, 1140px, etc</p>
+			<p><code>К полной поддержке стремится модуль CSS3 Grid Layout</code></p>
+		</ol>
+	</div></section>
+	<section class="slide cover" id="PictureGrid"><div>
+		<img src="pictures/grid.png" alt="">
+		<style>
+			#PictureGrid { background: #fff; }
+			#PictureGrid img { vertical-align: middle; width: 100%; }
+		</style>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Вootstrap</h2>
+		<ul>
+			<li><strong>Basic CSS</strong> - кнопки, заголовки, таблицы, формы, адаптивная вёрстка, сетка</li>
+			<li><strong>Components</strong> - меню, пагинация, иконки, надписи, панели, группы элементов</li>
+			<li><strong>Javascript</strong> - модальные окна, табы, подсказки, карусель, аккордион</li>
+		</ul>
+	</div></section>
+	<section class="slide cover" id="PictureBootstrap"><div>
+		<img src="pictures/bootstrap.jpg" alt="">
+		<style>
+			#PictureBootstrap { background: #fff; }
+			#PictureBootstrap img { vertical-align: middle; width: 100%; }
+		</style>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Оценка</h2>
+		<li><code>+</code> самый известный фреймворк</li>
+		<li><code>+</code> хорошая документация и поддержка</li>
+		<li><code>+</code> собран из less отдельных less</li>
+		<li><code>+</code> программисты его любят</li>
+		<li><code>-</code> программисты его любят</li>
+		<li><code>-</code> навязывает свою идеологию</li>
+		<li><code>-</code> тяжело кастомизируется</li>
+		<p class="note">Foundation, Pure, Compass, Blueprint, Gumby, Kube, YAML...</p>
+	</div></section>
+	<section class="slide cover" id="PictureSass"><div>
+		<h2>SASS</h2>
+		<img src="pictures/sass.png" class="slave"/>
+		<style>
+			#PictureSass { background: #fff; }
+			#PictureSass img { left: auto; right: 0; height: 100%;; }
+		</style>
+		<li>Переменные</li>
+		<li>Вложенность</li>
+		<li>Миксины</li>
+		<li>Операторы</li>
+		<li>Расширения</li>
+		<li>прекомпиляция</li>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Usability: В чем проблема?</h2>
+		<ul>
+			<li>Недостаток ресурсов</li>
+			<li>Слабый стимул, смысл, внимание</li>
+			<li>Недостаток квалификации</li>
+			<li>Проблемы объективности и измерения</li>
+			<li>Несогласие руководства и клиента</li>
+		</ul>
+		<p>
+			<code class="next">Не оправдывай себя!</code>
+		</p>
+	</div></section>
+	<section class="slide cover" id="PictureUsability"><div>
+		<h2>Usability: Решение!</h2>
+		<img src="pictures/usability.jpg" class="slave"/>
+		<style>
+			#PictureUsability { background: #fff; }
+			#PictureUsability img { left: auto; right: 0; height: 100%;; }
+		</style>
+		<ul>
+			<li>Делай проще!</li>
+			<li>Будь предсказуем</li>
+			<li>Меньше кликов!</li>
+			<li>Несогласие руководства и клиента</li>
+			<li>Лаконично - это хорошо!</li>
+			<li>Выдели важное</li>
+			<li>Меньше хлама - больше стиля!</li>
+		</ul>
+		<code>Балдей от результата!</code>
+	</div></section>	
+	<section class="slide cover" id="PictureBaby"><div>
+		<h2>Вот так!</h2>
+		<img src="pictures/html-baby.jpg" class="slave"/>
+		<style>
+			#PictureBaby { background: #fff; }
+			#PictureBaby img { right: 0; left: auto; height: 100%; }
+		</style>
+	</div></section>
+	<p class="badge"><a href="https://github.com/likyrg/CSS-seminar">Fork on Github</a></p>
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"><div></div></div>
+	<script src="shower/shower.min.js"></script>
+	<!-- Copyright © 2013 Yours Truly, Famous Inc. -->
+	<!-- Photos by John Carey, fiftyfootshadows.net -->
+</body>
+</html>
